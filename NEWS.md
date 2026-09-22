@@ -10,6 +10,7 @@
 * Add compile time option to limit LZMA window size.
 * Add more comprehensive fuzzers for metadata and write code paths.
 * Support `zip_fseek()`/`zip_file_is_seekable()` for stored (uncompressed) entries encrypted with WinZip AES. Seeking means the entry's authentication code can no longer be verified unless it ends up being read fully, contiguously, from the start.
+* Support opening zip archives with data prepended (e.g. self-extractor stubs); add `zip_get_archive_prefix_length()` to retrieve the prefix length.
 
 # 1.11.4 [2025-05-23]
 
