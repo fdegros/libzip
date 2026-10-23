@@ -1,4 +1,5 @@
 # 1.13 [Unreleased]
+* Support opening zip archives with data prepended (e.g. self-extractor stubs); add `zip_get_archive_prefix_length()` to retrieve the prefix length.
 
 * Include website in repository and source distribution.
 
