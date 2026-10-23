@@ -1,5 +1,6 @@
 # 1.13 [Unreleased]
 * Support opening zip archives with data prepended (e.g. self-extractor stubs); add `zip_get_archive_prefix_length()` to retrieve the prefix length.
+* Support `zip_fseek()`/`zip_file_is_seekable()` for stored (uncompressed) entries encrypted with WinZip AES. Seeking means the entry's authentication code can no longer be verified unless it ends up being read fully, contiguously, from the start.
 
 * Include website in repository and source distribution.
 
