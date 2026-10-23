@@ -6,7 +6,7 @@ if (${CMAKE_VERSION} VERSION_LESS "3.17.0")
 endif()
 
 project(libzip
-  VERSION 1.12.1
+  VERSION 2.0.0
   LANGUAGES C)
 
 if(NOT libzip_VERSION_PATCH)
